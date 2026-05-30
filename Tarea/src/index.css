@@ -1,0 +1,37 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Oscuro */
+body.dark {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+body.dark .panel {
+  background-color: #16213e;
+  border: 1px solid #0f3460;
+}
+
+/* Modo Claro */
+body.light {
+  background-color: #f4f6f8;
+  color: #333333;
+}
+body.light .panel {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+/* Clases utilitarias para acomodar el layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  text-align: left;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
