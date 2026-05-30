@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const UserPanel = () => {
-  // Convertimos la lista en un arreglo de objetos para manejar el estado de cada uno
+
   const [equipo, setEquipo] = useState([
     { id: 1, nombre: 'Agustin', activo: true },
     { id: 2, nombre: 'Arturo', activo: false },
@@ -10,7 +10,7 @@ const UserPanel = () => {
     { id: 5, nombre: 'William', activo: false },
   ]);
 
-  // Esta función cambia el estado solo del usuario al que le damos clic
+
   const toggleEstado = (id) => {
     setEquipo(equipo.map(miembro => 
       miembro.id === id ? { ...miembro, activo: !miembro.activo } : miembro
