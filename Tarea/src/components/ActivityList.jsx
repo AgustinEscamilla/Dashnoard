@@ -24,7 +24,7 @@ const ActivityList = () => {
     <div className="panel" style={{ padding: '20px' }}>
       <h2>📜 Registro de Actividades</h2>
       
-      {/* Filtro Básico */}
+     
       <div style={{ marginBottom: '15px' }}>
         <label style={{ marginRight: '10px', fontWeight: 'bold' }}>Filtrar por tipo: </label>
         <select 
@@ -40,7 +40,7 @@ const ActivityList = () => {
         </select>
       </div>
 
-      {/* Lista Dinámica usando el componente Card */}
+      
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         {actividadesFiltradas.length > 0 ? (
           actividadesFiltradas.map((act) => (
